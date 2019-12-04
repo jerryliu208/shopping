@@ -37,7 +37,7 @@
 		.footer{
 			background: gray;
 			height: 200px;
-			margin-top: 50px;
+			margin-top: 100px;
 		}
 		.footerWord{
 			text-align: center;
@@ -46,7 +46,7 @@
 	</head>
 	<body>
 		<header>
-			<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
 				<a class="navbar-brand" href="#">Navbar</a>
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
@@ -54,20 +54,21 @@
 				<div class="collapse navbar-collapse" id="navbarSupportedContent">
 					<ul class="navbar-nav marginleftauto">
 						<li class="nav-item active">
-							<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+							<a class="nav-link" href="#">關於我們<span class="sr-only">(current)</span></a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#">Link</a>
+							<a class="nav-link" href="#">購物車</a>
 						</li>
 						<li class="nav-item dropdown">
 							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-								Dropdown
+								會員專區
 							</a>
 							<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-								<a class="dropdown-item" href="#">Action</a>
-								<a class="dropdown-item" href="#">Another action</a>
+								<a class="dropdown-item" href="#">個人資料</a>
+								<a class="dropdown-item" href="#">消費紀錄</a>
+								<a class="dropdown-item" href="#">評論與評分</a>
 								<div class="dropdown-divider"></div>
-								<a class="dropdown-item" href="#">Something else here</a>
+								<a class="dropdown-item" href="#">登入|註冊</a>
 							</div>
 						</li>
 					</ul>
@@ -114,13 +115,12 @@
 		</div>
 		<div class="row margin0">
 			<div class="col-xl-2 padding0">
-				<a href="#" class="list-group-item list-group-item-action active">
-					Cras justo odio
-				</a>
-				<a href="#" class="list-group-item list-group-item-action">Dapibus ac facilisis in</a>
-				<a href="#" class="list-group-item list-group-item-action">Morbi leo risus</a>
-				<a href="#" class="list-group-item list-group-item-action">Porta ac consectetur ac</a>
-				<a href="#" class="list-group-item list-group-item-action disabled" tabindex="-1" aria-disabled="true">Vestibulum at eros</a>
+				<div class="list-group" id="list-tab" role="tablist">
+					<a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">🔥熱門商品</a>
+					<a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">吮指套餐</a>
+					<a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">主食專區</a>
+					<a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings">美味點心</a>
+				</div>
 			</div>
 			<div class="col-xl-10">
 				<div class="row">
