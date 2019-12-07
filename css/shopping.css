@@ -71,6 +71,19 @@
 		.productmainimg{
 			margin-bottom: 20px;
 		}
+		.bannerWord{
+			position: relative; 
+			top: 100%;
+			left: 5%;
+			z-index: 2;
+		}
+		.bannerlogo{
+			width: 30%;
+			z-index: 2;
+			position: absolute;
+			top: -100%;
+			left: 40%
+		}
 		.bannermargin{
 			margin:0px 0px 20px 0px;
 		}
