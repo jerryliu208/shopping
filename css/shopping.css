@@ -1,5 +1,9 @@
+		html{
+			width: 100%;
+		}
 		.index{
 			background: #f1f1f1;
+			width: 100%;
 		}
 		.selector-for-some-widget {
 		    box-sizing: content-box;
@@ -67,8 +71,8 @@
 		.productmainimg{
 			margin-bottom: 20px;
 		}
-		.marginbottom{
-			margin-bottom: 20px;
+		.bannermargin{
+			margin:0px 0px 20px 0px;
 		}
 		.bar{
 			width: 100%;
@@ -85,4 +89,17 @@
 		.line{
 			height: 4px;
 			background: #eace6d;
+		}
+		.newsPic{
+			padding: 0;
+			border:0;
+		}
+		.newsPicDiv:hover .newsPic{
+            transition: 0.5s;
+            transform: scale(1.1, 1.1);
+            -webkit-filter:brightness(150%);
+		}
+		.newsPicDiv{
+			margin: 10px 15px 10px 15px; 
+			overflow: hidden;
 		}
