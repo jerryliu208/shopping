@@ -10,12 +10,17 @@
 	<body class="index">
 		<header>
 			<nav class="navbar navbar-expand-lg navbar-light navbg fixed-top">
-				<a class="navbar-brand padding0" href="index.html"><img class="img-fluid" style="width:50px;" src="picture/logo.png"></a>
+				<!--/////////////////////////////LOGO圖案開始/////////////////////////////////-->
+				<a class="navbar-brand padding0" href="index.html"><img class="img-fluid" style="width:120px;" src="picture/logo.png"></a>
+				<!--/////////////////////////////LOGO圖案結束/////////////////////////////////-->
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 				</button>
 				<div class="collapse navbar-collapse" id="navbarSupportedContent">
 					<ul class="navbar-nav marginleftauto">
+						<li class="nav-item">
+							<span class="nav-link chinese" href="#"><img src="picture/user.png" style="width: 20px;height: 20px;">瀏覽人數:100人</span>
+						</li>
 						<li class="nav-item">
 							<a class="nav-link chinese" href="about.html">關於我們<span class="sr-only">(current)</span></a>
 						</li>
@@ -29,15 +34,75 @@
 							<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
 								<a class="dropdown-item chinese" href="#">個人資料</a>
 								<a class="dropdown-item chinese" href="#">消費紀錄</a>
-								<a class="dropdown-item chinese" href="#">我的最愛</a>
-								<a class="dropdown-item chinese" href="#">評論與評分</a>
-								<div class="dropdown-divider"></div>
-								<a class="dropdown-item chinese" href="#">登入|註冊</a>
 							</div>
+							
+						</li>
+						<li class="nav-item">
+							<button type="button" class="nav-link chinese btn btn-primarybtn" data-toggle="modal" data-target="#exampleModal01" href="#">登入</button>
+						</li>
+						<li class="nav-item">
+							<span class="nav-link chinese" href="#">|</span>
+						</li>
+						<li class="nav-item">
+							<button type="button" class="nav-link chinese btn btn-primarybtn" data-toggle="modal" data-target="#exampleModal02" href="#">註冊</button>
 						</li>
 					</ul>
 				</div>
 			</nav>
+			<div class="modal fade" id="exampleModal01" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+						<div class="modal-header" style="background-color: #efca00;">
+							<h2 class="modal-title" id="exampleModalLabel" style="margin-left:180px;">Sign In</h2>
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+							</button>
+						</div>
+						<div class="modal-body center">
+							<div style="margin-top: 30px;">
+								<img class="login-img" src="picture/Username.png">
+								<input class="login-text" type="text" placeholder="Username/Email">
+							</div>
+							<div style="margin-top: 30px;margin-bottom:10px;">
+								<img class="login-img" src="picture/Password.png">
+								<input class="login-text" type="text" placeholder="Password">
+							</div>
+						</div>
+						<div class="center" style="margin-bottom:50px;">
+							<input class="signin" type="button" value="Sign in">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal fade" id="exampleModal02" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+						<div class="modal-header" style="background-color: #efca00;">
+							<h2 class="modal-title" id="exampleModalLabel" style="margin-left:180px;">Sign Up</h2>
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+							</button>
+						</div>
+						<div class="modal-body center">
+							<div style="margin-top: 30px;">
+								<img class="login-img" src="picture/Username.png">
+								<input class="login-text" type="text" placeholder="Username">
+							</div>
+							<div style="margin-top: 30px;margin-bottom:10px;">
+								<img class="login-img" src="picture/email.png">
+								<input class="login-text" type="text" placeholder="Email">
+							</div>
+							<div style="margin-top: 30px;margin-bottom:10px;">
+								<img class="login-img" src="picture/Password.png">
+								<input class="login-text" type="text" placeholder="Password">
+							</div>
+						</div>
+						<div class="center" style="margin-bottom:50px;">
+							<input class="signin" type="button" value="Sign up">
+						</div>
+					</div>
+				</div>
+			</div>
 		</header>
 		<div class="row bannermargin">
 			<div class="col-xl-12 topmargin padding0" style="position: relative;">
@@ -46,7 +111,7 @@
 					<div class="col-3 padding0"></div>
 					<div class="col-6 padding0">
 						<img class="width100 img-fluid bannerWord" src="picture/bannerWord.png">
-			            <img class="img-fluid bannerlogo" src="picture/logo.png">
+						<img class="img-fluid bannerlogo" src="picture/logo.png">
 					</div>
 					<div class="col-3 padding0"></div>
 				</div>
@@ -72,7 +137,7 @@
 				<div class="modal fade" id="exampleModalLong1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
 					<div class="modal-dialog" role="document">
 						<div class="modal-content">
-							<div class="modal-header">
+							<div class="modal-header navbg">
 								<h5 class="modal-title chinese" id="exampleModalLongTitle">本週熱門</h5>
 								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 								<span aria-hidden="true">&times;</span>
@@ -88,6 +153,15 @@
 											<div class="card-body">
 												<h5 class="card-title chinese" style="font-weight: bold;">饗樂餐</h5>
 												<p class="card-text chinese" style="color: red; font-weight: bold;">$239</p>
+												<p style="font-size: 13px;">
+													數量：
+													<select>
+														<option>1</option>
+														<option>2</option>
+														<option>3</option>
+														<option>4</option>
+													</select>
+												</p>
 												<a href="product/product.html" class="btn btn-primary">加入購物車🛒</a>
 											</div>
 										</div>
@@ -100,6 +174,15 @@
 											<div class="card-body">
 												<h5 class="card-title chinese" style="font-weight: bold;">饗樂餐</h5>
 												<p class="card-text chinese" style="color: red; font-weight: bold;">$239</p>
+												<p style="font-size: 13px;">
+													數量：
+													<select>
+														<option>1</option>
+														<option>2</option>
+														<option>3</option>
+														<option>4</option>
+													</select>
+												</p>
 												<a href="product/product.html" class="btn btn-primary">加入購物車🛒</a>
 											</div>
 										</div>
@@ -112,6 +195,15 @@
 											<div class="card-body">
 												<h5 class="card-title chinese" style="font-weight: bold;">饗樂餐</h5>
 												<p class="card-text chinese" style="color: red; font-weight: bold;">$239</p>
+												<p style="font-size: 13px;">
+													數量：
+													<select>
+														<option>1</option>
+														<option>2</option>
+														<option>3</option>
+														<option>4</option>
+													</select>
+												</p>
 												<a href="product/product.html" class="btn btn-primary">加入購物車🛒</a>
 											</div>
 										</div>
@@ -119,7 +211,7 @@
 								</div>
 							</div>
 							<div class="modal-footer">
-								<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+								<button type="button" class="btn btn-secondary" style="background-color: black;"data-dismiss="modal">Close</button>
 							</div>
 						</div>
 					</div>
@@ -132,18 +224,82 @@
 				</div>
 				<div class="modal fade" id="exampleModalLong2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
 					<div class="modal-dialog" role="document">
-						<div class="modal-content">
-							<div class="modal-header">
+						<div class="modal-content ">
+							<div class="modal-header navbg">
 								<h5 class="modal-title chinese" id="exampleModalLongTitle">檔期促銷</h5>
 								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 								<span aria-hidden="true">&times;</span>
 								</button>
 							</div>
 							<div class="modal-body">
-								...
+								<div class="row">
+									<div class="col-xl-4 col-12 padding0">
+										<div class="card margin">
+											<a href="product/product.html">
+												<img src="picture/hot1.jpg" class="card-img-top">
+											</a>
+											<div class="card-body">
+												<h5 class="card-title chinese" style="font-weight: bold;">饗樂餐</h5>
+												<p class="card-text chinese" style="color: red; font-weight: bold;">$239</p>
+												<p style="font-size: 13px;">
+													數量：
+													<select>
+														<option>1</option>
+														<option>2</option>
+														<option>3</option>
+														<option>4</option>
+													</select>
+												</p>
+												<a href="product/product.html" class="btn btn-primary">加入購物車🛒</a>
+											</div>
+										</div>
+									</div>
+									<div class="col-xl-4 col-12 padding0">
+										<div class="card margin">
+											<a href="product/product.html">
+												<img src="picture/hot1.jpg" class="card-img-top">
+											</a>
+											<div class="card-body">
+												<h5 class="card-title chinese" style="font-weight: bold;">饗樂餐</h5>
+												<p class="card-text chinese" style="color: red; font-weight: bold;">$239</p>
+												<p style="font-size: 13px;">
+													數量：
+													<select>
+														<option>1</option>
+														<option>2</option>
+														<option>3</option>
+														<option>4</option>
+													</select>
+												</p>
+												<a href="product/product.html" class="btn btn-primary">加入購物車🛒</a>
+											</div>
+										</div>
+									</div>
+									<div class="col-xl-4 col-12 padding0">
+										<div class="card margin">
+											<a href="product/product.html">
+												<img src="picture/hot1.jpg" class="card-img-top">
+											</a>
+											<div class="card-body">
+												<h5 class="card-title chinese" style="font-weight: bold;">饗樂餐</h5>
+												<p class="card-text chinese" style="color: red; font-weight: bold;">$239</p>
+												<p style="font-size: 13px;">
+													數量：
+													<select>
+														<option>1</option>
+														<option>2</option>
+														<option>3</option>
+														<option>4</option>
+													</select>
+												</p>
+												<a href="product/product.html" class="btn btn-primary">加入購物車🛒</a>
+											</div>
+										</div>
+									</div>
+								</div>
 							</div>
 							<div class="modal-footer">
-								<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+								<button type="button" class="btn btn-secondary" style="background-color: black;"data-dismiss="modal">Close</button>
 							</div>
 						</div>
 					</div>
@@ -157,17 +313,91 @@
 				<div class="modal fade" id="exampleModalLong3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
 					<div class="modal-dialog" role="document">
 						<div class="modal-content">
-							<div class="modal-header">
+							<div class="modal-header navbg">
 								<h5 class="modal-title chinese" id="exampleModalLongTitle">限時優惠</h5>
 								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 								<span aria-hidden="true">&times;</span>
 								</button>
 							</div>
 							<div class="modal-body">
-								...
+								<div class="row">
+									<div class="col-xl-4 col-12 padding0">
+										<div class="card margin">
+											<a href="product/product.html">
+												<img src="picture/hot1.jpg" class="card-img-top">
+											</a>
+											<div class="card-body">
+												<h5 class="card-title chinese" style="font-weight: bold;">饗樂餐</h5>
+												<p class="card-text chinese" style="color: red; font-weight: bold;">$239</p>
+												
+												<p style="font-size: 13px;">
+													數量：
+													<select>
+														<option>1</option>
+														<option>2</option>
+														<option>3</option>
+														<option>4</option>
+													</select>
+												</p>
+												<p style="font-size: 13px;">
+													庫存數量:50份
+												</p>
+												<a href="product/product.html" class="btn btn-primary">加入購物車🛒</a>
+											</div>
+										</div>
+									</div>
+									<div class="col-xl-4 col-12 padding0">
+										<div class="card margin">
+											<a href="product/product.html">
+												<img src="picture/hot1.jpg" class="card-img-top">
+											</a>
+											<div class="card-body">
+												<h5 class="card-title chinese" style="font-weight: bold;">饗樂餐</h5>
+												<p class="card-text chinese" style="color: red; font-weight: bold;">$239</p>
+												<p style="font-size: 13px;">
+													數量：
+													<select>
+														<option>1</option>
+														<option>2</option>
+														<option>3</option>
+														<option>4</option>
+													</select>
+												</p>
+												<p style="font-size: 13px;">
+													庫存數量:50份
+												</p>
+												<a href="product/product.html" class="btn btn-primary">加入購物車🛒</a>
+											</div>
+										</div>
+									</div>
+									<div class="col-xl-4 col-12 padding0">
+										<div class="card margin">
+											<a href="product/product.html">
+												<img src="picture/hot1.jpg" class="card-img-top">
+											</a>
+											<div class="card-body">
+												<h5 class="card-title chinese" style="font-weight: bold;">饗樂餐</h5>
+												<p class="card-text chinese" style="color: red; font-weight: bold;">$239</p>
+												<p style="font-size: 13px;">
+													數量：
+													<select>
+														<option>1</option>
+														<option>2</option>
+														<option>3</option>
+														<option>4</option>
+													</select>
+												</p>
+												<p style="font-size: 13px;">
+													庫存數量:50份
+												</p>
+												<a href="product/product.html" class="btn btn-primary">加入購物車🛒</a>
+											</div>
+										</div>
+									</div>
+								</div>
 							</div>
 							<div class="modal-footer">
-								<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+								<button type="button" class="btn btn-secondary" style="background-color: black;"data-dismiss="modal">Close</button>
 							</div>
 						</div>
 					</div>
@@ -181,17 +411,81 @@
 				<div class="modal fade" id="exampleModalLong4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
 					<div class="modal-dialog" role="document">
 						<div class="modal-content">
-							<div class="modal-header">
+							<div class="modal-header navbg">
 								<h5 class="modal-title chinese" id="exampleModalLongTitle">精選產品</h5>
 								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 								<span aria-hidden="true">&times;</span>
 								</button>
 							</div>
 							<div class="modal-body">
-								...
+								<div class="row">
+									<div class="col-xl-4 col-12 padding0">
+										<div class="card margin">
+											<a href="product/product.html">
+												<img src="picture/hot1.jpg" class="card-img-top">
+											</a>
+											<div class="card-body">
+												<h5 class="card-title chinese" style="font-weight: bold;">饗樂餐</h5>
+												<p class="card-text chinese" style="color: red; font-weight: bold;">$239</p>
+												<p style="font-size: 13px;">
+													數量：
+													<select>
+														<option>1</option>
+														<option>2</option>
+														<option>3</option>
+														<option>4</option>
+													</select>
+												</p>
+												<a href="product/product.html" class="btn btn-primary">加入購物車🛒</a>
+											</div>
+										</div>
+									</div>
+									<div class="col-xl-4 col-12 padding0">
+										<div class="card margin">
+											<a href="product/product.html">
+												<img src="picture/hot1.jpg" class="card-img-top">
+											</a>
+											<div class="card-body">
+												<h5 class="card-title chinese" style="font-weight: bold;">饗樂餐</h5>
+												<p class="card-text chinese" style="color: red; font-weight: bold;">$239</p>
+												<p style="font-size: 13px;">
+													數量：
+													<select>
+														<option>1</option>
+														<option>2</option>
+														<option>3</option>
+														<option>4</option>
+													</select>
+												</p>
+												<a href="product/product.html" class="btn btn-primary">加入購物車🛒</a>
+											</div>
+										</div>
+									</div>
+									<div class="col-xl-4 col-12 padding0">
+										<div class="card margin">
+											<a href="product/product.html">
+												<img src="picture/hot1.jpg" class="card-img-top">
+											</a>
+											<div class="card-body">
+												<h5 class="card-title chinese" style="font-weight: bold;">饗樂餐</h5>
+												<p class="card-text chinese" style="color: red; font-weight: bold;">$239</p>
+												<p style="font-size: 13px;">
+													數量：
+													<select>
+														<option>1</option>
+														<option>2</option>
+														<option>3</option>
+														<option>4</option>
+													</select>
+												</p>
+												<a href="product/product.html" class="btn btn-primary">加入購物車🛒</a>
+											</div>
+										</div>
+									</div>
+								</div>
 							</div>
 							<div class="modal-footer">
-								<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+								<button type="button" class="btn btn-secondary" style="background-color: black;"data-dismiss="modal">Close</button>
 							</div>
 						</div>
 					</div>
@@ -199,12 +493,17 @@
 				<!--//////////////////////////////////////////動態廣告結束////////////////////////////////////////////////-->
 			</div>
 		</div>
-		<div class="row margin0">
+
+		<div class="row margin0" style="margin-top:50px;">
 			<div class="col-xl-2 padding0 listgroupmargin">
 				<div class="list-group" id="list-tab" role="tablist">
 					<a class="list-group-item list-group-item-action active" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile"><font class="chinese">吮指套餐</font></a>
 					<a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages"><font class="chinese">主食專區</font></a>
 					<a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings"><font class="chinese">美味點心</font></a>
+					<div>
+						<input style="width:80%;border-color: black;" type="text" placeholder="請輸入商品名稱">
+						<input class="padding0" style="background-color: black;color:white;font-family:微軟正黑體;font-weight: bold;width: 18%; border:0px;"type="button" value="搜尋">
+					</div>
 				</div>
 			</div>
 			<div class="col-xl-10">
@@ -217,7 +516,7 @@
 							<div class="card-body">
 								<h5 class="card-title chinese" style="font-weight: bold;">饗樂餐</h5>
 								<p class="card-text chinese" style="color: red; font-weight: bold;">$239</p>
-								<a href="product/product.html" class="btn btn-primary">加入購物車🛒</a>
+								<a href="product/product.html" class="btn btn-primary">詳細內容👉</a>
 							</div>
 						</div>
 					</div>
@@ -229,7 +528,7 @@
 							<div class="card-body">
 								<h5 class="card-title chinese" style="font-weight: bold;">饗樂餐</h5>
 								<p class="card-text chinese" style="color: red; font-weight: bold;">$239</p>
-								<a href="product/product.html" class="btn btn-primary">加入購物車🛒</a>
+								<a href="product/product.html" class="btn btn-primary">詳細內容👉</a>
 							</div>
 						</div>
 					</div>
@@ -241,7 +540,7 @@
 							<div class="card-body">
 								<h5 class="card-title chinese" style="font-weight: bold;">饗樂餐</h5>
 								<p class="card-text chinese" style="color: red; font-weight: bold;">$239</p>
-								<a href="product/product.html" class="btn btn-primary">加入購物車🛒</a>
+								<a href="product/product.html" class="btn btn-primary">詳細內容👉</a>
 							</div>
 						</div>
 					</div>
@@ -253,7 +552,7 @@
 							<div class="card-body">
 								<h5 class="card-title chinese" style="font-weight: bold;">饗樂餐</h5>
 								<p class="card-text chinese" style="color: red; font-weight: bold;">$239</p>
-								<a href="product/product.html" class="btn btn-primary">加入購物車🛒</a>
+								<a href="product/product.html" class="btn btn-primary">詳細內容👉</a>
 							</div>
 						</div>
 					</div>
@@ -265,7 +564,7 @@
 							<div class="card-body">
 								<h5 class="card-title chinese" style="font-weight: bold;">饗樂餐</h5>
 								<p class="card-text chinese" style="color: red; font-weight: bold;">$239</p>
-								<a href="product/product.html" class="btn btn-primary">加入購物車🛒</a>
+								<a href="product/product.html" class="btn btn-primary">詳細內容👉</a>
 							</div>
 						</div>
 					</div>
@@ -277,32 +576,17 @@
 							<div class="card-body">
 								<h5 class="card-title chinese" style="font-weight: bold;">饗樂餐</h5>
 								<p class="card-text chinese" style="color: red; font-weight: bold;">$239</p>
-								<a href="product/product.html" class="btn btn-primary">加入購物車🛒</a>
+								<a href="product/product.html" class="btn btn-primary">詳細內容👉</a>
 							</div>
 						</div>
-					</div>
-				</div>
-				<div class="container">
-					<div class="row">
-						<div class=" col-xl-4 col-1"></div>
-						<div class="col-xl-4 col-10">
-							<nav aria-label="Page navigation example" class="center">
-								<ul class="pagination">
-									<li class="page-item"><a class="page-link" href="#">Previous</a></li>
-									<li class="page-item"><a class="page-link" href="#">1</a></li>
-									<li class="page-item"><a class="page-link" href="#">2</a></li>
-									<li class="page-item"><a class="page-link" href="#">3</a></li>
-									<li class="page-item"><a class="page-link" href="#">Next</a></li>
-								</ul>
-							</nav>
-						</div>
-						<div class="col-xl-4 col-1"></div>
 					</div>
 				</div>
 			</div>
 		</div>
 		<footer class="width100 footer">
-			<p class="footerWord">copyright</p>
+			<p class="footerWord">Copyright by 雞饗omG <br>
+				+886-912345678|Email:ChiHsiangomG@gmail.com
+			</p>
 		</footer>
 		<script src="https://code.jquery.com/jquery-3.4.1.slim.js" integrity="sha256-BTlTdQO9/fascB1drekrDVkaKd9PkwBymMlHOiG+qLI=" crossorigin="anonymous"></script>
 		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>

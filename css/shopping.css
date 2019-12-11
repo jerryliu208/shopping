@@ -11,8 +11,27 @@
 		.navbg{
 			background: #efca00;
 		}
+		/*登入註冊畫面*/
+		.login-img{
+			width: 20px;
+			height: 20px;
+		}
+		.login-text{
+			height: 60px;
+			width: 250px;
+			padding-left:10px;
+			border-left: none;
+			border-top: none;
+			border-right: none;
+		}
+		.signin{
+			height:50px;
+			width: 100px;
+			background-color:#efca00; 
+		}
 		.chinese{
 			font-family: "微軟正黑體";
+			font-weight: bold;
 		}
 		.banner{
 			-webkit-filter:brightness(70%);
@@ -55,12 +74,17 @@
 			display: block;
 		}
 		.footer{
-			background: gray;
+			background: black;
 			height: 100px;
 			margin-top: 100px;
+
 		}
 		.footerWord{
+			padding-top:30px;
 			text-align: center;
+			font-size:15px;
+			font-weight: bold;
+			color:gray;
 		}
 		.listgroupmargin{
 			margin-bottom: 10px;
