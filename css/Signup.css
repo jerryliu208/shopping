@@ -1,0 +1,50 @@
+/*nav bar*/
+.navbg{
+background: #efca00;
+}
+.chinese{
+font-family: "微軟正黑體";
+font-weight: bold;
+}
+.marginleftauto{
+margin-left: auto;
+}
+.center{
+margin-left: auto;
+margin-right: auto;
+}
+/*nav bar end*/
+/*中間*/
+.margintop{
+	margin-top:150px;
+}
+.title{
+	font-size: 50px;
+	font-weight: bolder;
+	text-align: center;
+}
+.buttonbg{
+	background-color: #efca00;
+}
+.font01{
+	color: black;
+	font-family: "微軟正黑體";
+	font-weight: bold;
+}
+/*footer*/
+.width100{
+width: 100%;
+}
+.footer{
+background: black;
+height: 130px;
+margin-top: 100px;
+}
+.footerWord{
+padding-top:30px;
+text-align: center;
+font-size:15px;
+font-weight: bold;
+color:gray;
+}
+/*footer end*/

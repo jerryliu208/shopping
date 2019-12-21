@@ -1,0 +1,40 @@
+/*nav bar*/
+.navbg{
+background: #efca00;
+}
+.chinese{
+font-family: "微軟正黑體";
+font-weight: bold;
+}
+.marginleftauto{
+margin-left: auto;
+}
+.center{
+margin-left: auto;
+margin-right: auto;
+}
+/*nav bar end*/
+.marginleftauto{
+margin-left: auto;
+}
+/*nav bar end*/
+/*側邊導覽列*/
+.margintop{
+	margin-top:150px;
+}
+/*footer*/
+.width100{
+width: 100%;
+}
+.footer{
+background: black;
+height: 100px;
+margin-top: 100px;
+}
+.footerWord{
+padding-top:30px;
+text-align: center;
+font-size:15px;
+font-weight: bold;
+color:gray;
+}
