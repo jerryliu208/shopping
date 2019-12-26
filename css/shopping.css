@@ -222,3 +222,41 @@
 			background-color: #a90000;
 			color: white;
 		}
+		.hotBG{
+			background: #f9ca6f;
+			padding: 20px;
+			border-radius: 20px;
+			margin-bottom: 20px;
+		}
+		.hotImg{
+			width: 100%;
+			display: block;
+			margin: 0px auto;
+			border-radius: 5px;
+			box-shadow: 2px 2px 8px #404040;
+			opacity:0;
+		}
+		.optionImg{
+			width: 80%;
+			display: block;
+			margin: 40px auto;
+			border-radius: 30px;
+			-webkit-filter:brightness(90%);
+		}
+		.optionImg:hover{
+			transition: 0.5s;
+			-webkit-filter:brightness(120%);
+		}
+		.optionButton{
+			width: 10%;
+			height: 36px;
+			border:0;
+			border-radius: 10px;
+			font-family: "微軟正黑體";
+			font-weight: bold;
+			background: black;
+			color: white;
+			position: absolute;
+			top: 55%;
+			left: 70%;
+		}
