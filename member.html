@@ -28,20 +28,19 @@
               <a class="nav-link chinese" href="about.html">關於我們<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link chinese" href="#">購物車</a>
+              <a class="nav-link chinese" href="Car.html">購物車</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle chinese" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 會員專區
               </a>
               <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item chinese" href="member.html">個人資料</a>
+                <a class="dropdown-item chinese" href="member.html">會員資料</a>
                 <a class="dropdown-item chinese" href="recode.html">消費紀錄</a>
               </div>
-              
             </li>
             <li class="nav-item">
-              <button type="button" class="nav-link chinese btn btn-primarybtn" onclick="location.href='Signin.html';">登入</button>
+              <a class="nav-link chinese btn btn-primarybtn" href="Signin.html">登入</a>
             </li>
           </ul>
         </div>
@@ -62,22 +61,30 @@
           <hr style="border-width: 3px;">
           <form>
             <div class="form-group">
-              <label for="exampleInputEmail1">名稱 Username</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="黃小明">
+              <label for="exampleInputEmail1">姓名 Name</label>
+              <input type="text" class="form-control" id="name" aria-describedby="emailHelp" value="黃小明">
+            </div>
+            <div class="form-group">
+              <label for="exampleInputEmail1">電話 Phone</label>
+              <input type="text" class="form-control" id="phone" aria-describedby="emailHelp" value="0912345678">
+            </div>
+            <div class="form-group">
+              <label for="exampleInputEmail1">地址 Address</label>
+              <input type="text" class="form-control" id="address" aria-describedby="emailHelp" value="320桃園市中壢區中北路200號">
             </div>
             <div class="form-group">
               <label for="exampleInputPassword1">信箱 Email</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" placeholder="ChiHsiangom@gmail.com">
+              <input type="email" class="form-control" id="mail" value="ChiHsiangom@gmail.com">
             </div>
             <div class="form-group">
               <label for="exampleInputPassword1">密碼 Password</label>
-              <input type="password" class="form-control" placeholder="********" id="myInput">
+              <input type="password" class="form-control" value="********" id="myInput">
             </div>
             <div class="form-group form-check">
               <input type="checkbox" class="form-check-input" onclick="myFunction()">顯示密碼
             </div>
 
-            <button type="submit" class="btn btn-primary">儲存</button>
+            <button type="submit" class="btn btn-primary" id="button">儲存</button>
           </form>
         </div>
       </div>
@@ -102,6 +109,30 @@
                 x.type = "password";
               }
             }
+    </script>
+    <script>
+      $(document).ready(function(){
+      $("#button").click(function(){
+          if($("#name").val()==""){
+              alert("你尚未填寫姓名");
+              eval("document.form1['name'].focus()");       
+          }else if($("#phone").val()==""){
+              alert("你尚未填寫電話");
+              eval("document.form1['phone'].focus()");    
+          }else if($("#address").val()==""){
+              alert("你尚未填寫地址");
+              eval("document.form1['address'].focus()");       
+          }else if($("#mail").val()==""){
+              alert("你尚未填寫信箱");
+              eval("document.form1['mail'].focus()");       
+          }else if($("#myInput").val()==""){
+              alert("你尚未填寫密碼");
+              eval("document.form1['myInput'].focus()");       
+          }else{
+              document.form1.submit();
+          }
+      })
+   })
     </script>
   </body>
 </html>

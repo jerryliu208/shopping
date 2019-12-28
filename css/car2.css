@@ -1,0 +1,60 @@
+/*nav bar*/
+.navbg{
+background: #efca00;
+}
+.chinese{
+font-family: "微軟正黑體";
+font-weight: bold;
+}
+.marginleftauto{
+margin-left: auto;
+}
+.center{
+margin-left: auto;
+margin-right: auto;
+display: block;
+}
+/*nav bar end*/
+
+/*中間*/
+.margintop{
+	margin-top: 150px;
+}
+.title01{
+	font-family: "微軟正黑體";
+}
+.hr01{
+	border-width: 3px;
+	background-color:#efca00; 
+}
+.bg{
+	border: solid gray 2px;
+
+}
+.font01{
+	text-align: center;
+	padding: 20px 0px;
+}
+.veryheight{
+	height:250px;
+}
+
+
+/*footer*/
+.width100{
+width: 100%;
+}
+.footer{
+background: black;
+height: 130px;
+margin-top: 100px;
+}
+.footerWord{
+padding-top:30px;
+text-align: center;
+font-size:15px;
+font-weight: bold;
+color:gray;
+}
+
+/*footer end*/

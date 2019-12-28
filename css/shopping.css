@@ -1,5 +1,8 @@
-		html{
+﻿		html{
 			width: 100%;
+		}
+		.Menu{
+			background: #e2e2e2
 		}
 		.index{
 			background: #f1f1f1;
@@ -69,6 +72,7 @@
 		.center{
 			margin-left: auto;
 			margin-right: auto;
+			display: block;
 		}
 		.piccenter{
 			margin-left: auto;
@@ -84,7 +88,7 @@
 		.footerWord{
 			padding-top:30px;
 			text-align: center;
-			font-size:10px;
+			font-size:15px;
 			font-weight: bold;
 			color:gray;
 		}
@@ -138,8 +142,7 @@
 		img {
 		  vertical-align: middle;
 		}
-
-		/* Position the image container (needed to position the left and right arrows) */
+/* Position the image container (needed to position the left and right arrows) */
 		.container {
 		  position: relative;
 		}
@@ -148,6 +151,7 @@
 		.mySlides {
 		  display: none;
 		  margin: 0px auto 20px auto;
+		  width: 400px;
 		}
 
 		/* Add a pointer when hovering over the thumbnail images */
@@ -219,7 +223,7 @@
 		  opacity: 1;
 		}
 		.Btn{
-			background-color: #a90000;
+			background-color: #1e1e1e;
 			color: white;
 		}
 		.hotBG{
@@ -259,4 +263,16 @@
 			position: absolute;
 			top: 55%;
 			left: 70%;
+		}
+		.ratingimg{
+			width: 20px;
+			height: 20px;
+		}
+		.ratingbutton{
+			background-color: #efca00;
+			color: black;
+			font-weight: bolder;
+		}
+		.userpic{
+			width: 100px;
 		}
