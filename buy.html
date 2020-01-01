@@ -6,20 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="css/buy.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/buy.css">
     <title>確認</title>
-
     <script type="text/javascript">
-      function finish(){
-        alert('感謝您的購買');
-      }
+    function finish(){
+    alert('感謝您的購買');
+    }
     </script>
   </head>
-  <body>
+  <body style="font-family: 微軟正黑體;">
     <header>
       <nav class="navbar navbar-expand-lg navbar-light navbg fixed-top">
         <!--/////////////////////////////LOGO圖案開始/////////////////////////////////-->
-        <a class="navbar-brand padding0" href="index.html"><img class="img-fluid" style="width:120px;" src="picture/logo.png"></a>
+        <a class="navbar-brand padding0" href="index.html"><img class="img-fluid" style="width:120px;" src="assets/picture/logo.png"></a>
         <!--/////////////////////////////LOGO圖案結束/////////////////////////////////-->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -27,7 +26,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav marginleftauto">
             <li class="nav-item">
-              <span class="nav-link chinese" href="#"><img src="picture/user.png" style="width: 20px;height: 20px;">瀏覽人數:100人</span>
+              <span class="nav-link chinese" href="#"><img src="assets/picture/user.png" style="width: 20px;height: 20px;">瀏覽人數:100人</span>
             </li>
             <li class="nav-item">
               <a class="nav-link chinese" href="about.html">關於我們<span class="sr-only">(current)</span></a>
@@ -57,38 +56,24 @@
         <hr class="hr01">
         <table class="text-center" border="1">
           <tr>
-            <td style="width: 220px;"><h3>商品照片</h3></td>
-            <td style="width: 220px;"><h3>商品名稱</h3></td>
-            <td style="width: 220px;"><h3>單價</h3></td>
-            <td style="width: 220px;"><h3>數量</h3></td>
-            <td style="width: 220px;"><h3>總價</h3></td>
+            <td class="tdWidth"><h3>商品照片</h3></td>
+            <td class="tdWidth"><h3>商品名稱</h3></td>
+            <td class="tdWidth"><h3>單價</h3></td>
+            <td class="tdWidth"><h3>數量</h3></td>
+            <td class="tdWidth"><h3>總價</h3></td>
           </tr>
           <tr>
-            <td ><img style="width: 100px;height: 100px;" src="picture/family.jpg"></td>
+            <td ><img class="imgSize" src="assets/picture/family.jpg"></td>
             <td><h4>全家餐</h4></td>
             <td><h4>NT369</h4></td>
-            <td>
-              <select>
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-              </select>
-            </td>
+            <td><h4>1</h4></td>
             <td><h4>NT369</h4></td>
           </tr>
           <tr>
-            <td ><img style="width: 100px;height: 100px;" src="picture/Cola.jpg"></td>
+            <td><img class="imgSize" src="assets/picture/Cola.jpg"></td>
             <td><h4>可樂</h4></td>
             <td><h4>NT30</h4></td>
-            <td>
-              <select>
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-              </select>
-            </td>
+            <td><h4>1</h4></td>
             <td><h4>NT30</h4></td>
           </tr>
           <tr>
@@ -99,8 +84,7 @@
       </div>
       
       <hr style="margin-top: 30px;">
-
-      <div class="col-xl-12" style="margin-top: 30px;">  
+      <div class="col-xl-12" style="margin-top: 30px;">
         <h1 class="title01">付款資訊 <font style="font-size: 15px; color:gray;">現金付款</font></h1>
         <div style="margin-top: 20px;">
           <div class="form-row">
@@ -136,11 +120,7 @@
           <button onclick="finish()" class="button">下訂單</button>
         </div>
       </div>
-      
     </div>
-    
-    
-    
   </div>
   <footer class="width100 footer">
     <p class="footerWord">Copyright by 雞饗omG <br>

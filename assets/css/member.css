@@ -14,9 +14,16 @@ margin-left: auto;
 margin-right: auto;
 }
 /*nav bar end*/
+.marginleftauto{
+margin-left: auto;
+}
+/*nav bar end*/
 /*側邊導覽列*/
 .margintop{
 	margin-top:150px;
+}
+.barfont{
+	font-weight: bolder;
 }
 /*footer*/
 .width100{

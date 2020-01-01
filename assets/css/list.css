@@ -14,15 +14,31 @@ margin-left: auto;
 margin-right: auto;
 }
 /*nav bar end*/
-
-/*中間*/
-.margintop{
-	margin-top:150px;
+.marginleftauto{
+margin-left: auto;
 }
-.font01{
-	margin-left: 10px;
-	font-size:15px;
-	color: #efca00;
+/*側邊導覽列*/
+.margintop{
+margin-top:150px;
+}
+.barfont{
+font-weight: bolder;
+}
+/*表單*/
+.delbutton{
+font-weight: bolder;
+background-color:  #efca00;
+}
+.searchInput{
+background-color: black;
+color:white;
+font-family:微軟正黑體;
+font-weight: bold;
+width: 18%;
+border:0px;
+}
+.tdWidth{
+	width: 200px;
 }
 /*footer*/
 .width100{

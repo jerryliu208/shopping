@@ -14,24 +14,6 @@
 		.navbg{
 			background: #efca00;
 		}
-		/*登入註冊畫面*/
-		.login-img{
-			width: 20px;
-			height: 20px;
-		}
-		.login-text{
-			height: 60px;
-			width: 250px;
-			padding-left:10px;
-			border-left: none;
-			border-top: none;
-			border-right: none;
-		}
-		.signin{
-			height:50px;
-			width: 100px;
-			background-color:#efca00; 
-		}
 		.chinese{
 			font-family: "微軟正黑體";
 			font-weight: bold;
@@ -126,6 +108,15 @@
 			height: 4px;
 			background: #eace6d;
 		}
+		.searchInput{
+			background-color: black;
+			color:white;
+			font-family:微軟正黑體;
+			font-weight: bold;
+			width: 18%; 
+			border:0px;
+		}
+		/*動畫*/
 		.newsPic{
 			padding: 0;
 			border:0;

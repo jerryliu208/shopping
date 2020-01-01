@@ -14,7 +14,6 @@ margin-left: auto;
 margin-right: auto;
 }
 /*nav bar end*/
-
 /*中間*/
 .margintop{
 	margin-top:150px;
@@ -23,6 +22,9 @@ margin-right: auto;
 	margin-left: 10px;
 	font-size:15px;
 	color: #efca00;
+}
+.barfont{
+	font-weight: bolder;
 }
 /*footer*/
 .width100{

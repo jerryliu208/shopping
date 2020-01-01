@@ -14,17 +14,12 @@ margin-left: auto;
 margin-right: auto;
 }
 /*nav bar end*/
-.marginleftauto{
-margin-left: auto;
-}
 /*側邊導覽列*/
 .margintop{
 	margin-top:150px;
 }
-/*表單*/
-.delbutton{
+.barfont{
 	font-weight: bolder;
-	background-color:  #efca00;
 }
 /*footer*/
 .width100{

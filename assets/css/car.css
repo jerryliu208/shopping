@@ -12,15 +12,35 @@ margin-left: auto;
 .center{
 margin-left: auto;
 margin-right: auto;
+display: block;
 }
 /*nav bar end*/
-.marginleftauto{
-margin-left: auto;
-}
-/*nav bar end*/
-/*側邊導覽列*/
+/*中間*/
 .margintop{
-	margin-top:150px;
+	margin-top: 150px;
+}
+.title01{
+	font-family: "微軟正黑體";
+}
+.hr01{
+	border-width: 3px;
+	background-color:#efca00; 
+}
+.button{
+	font-weight: bolder;
+	background-color: #efca00; 
+}
+.button2{
+	background-color: #efca00; 
+	width: 100px;
+	height: 50px;
+}
+.font{
+	font-weight: bold;
+	font-size: 25px;
+}
+.tdWidth{
+	width: 200px;
 }
 /*footer*/
 .width100{
@@ -28,7 +48,7 @@ width: 100%;
 }
 .footer{
 background: black;
-height: 100px;
+height: 130px;
 margin-top: 100px;
 }
 .footerWord{
@@ -38,3 +58,4 @@ font-size:15px;
 font-weight: bold;
 color:gray;
 }
+/*footer end*/

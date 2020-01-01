@@ -44,6 +44,14 @@ display: block;
 	font-size: 20px;
 	line-height:40px;
 }
+.tdWidth{
+	width: 220px;
+}
+.imgSize
+{
+	width: 100px;
+	height: 100px;
+}
 input[type=checkbox] {
     zoom: 1.6;
 }
