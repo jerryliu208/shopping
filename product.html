@@ -91,7 +91,7 @@
 						<div class="col-xl-6">
 							<h1 style="font-family: 微軟正黑體;font-weight: bolder;">全家餐</h1>
 							<div class="bar" style="background-color: #efca00;"></div>
-							<p style="font-family: 微軟正黑體;">產品簡介：<br/>吮指套餐吮指套餐吮指套餐吮指套餐</p>
+							<p style="font-family: 微軟正黑體;">產品簡介：<br/>雞塊*4雞翅*3雞腿*2+小雞塊+中薯+玉米可樂餅</p>
 							<p style="font-family: 微軟正黑體;">
 								數量：
 								<select>
@@ -219,15 +219,15 @@
 			<div class="col-xl-12"style="margin-top: 100px;">
 				<h3 style="font-family: 微軟正黑體;">您的評價</h3>
 				<form style="margin-top: 20px;" id="checkboxGroup">
-					<input type="checkbox">1<img class="ratingimg" src="assets/picture/star.png">
-					<input type="checkbox">2<img class="ratingimg" src="assets/picture/star.png">
-					<input type="checkbox">3<img class="ratingimg" src="assets/picture/star.png">
-					<input type="checkbox">4<img class="ratingimg" src="assets/picture/star.png">
-					<input type="checkbox">5<img class="ratingimg" src="assets/picture/star.png">
+					<input type="radio" name="stars">1<img class="ratingimg" src="assets/picture/star.png">
+					<input type="radio" name="stars">2<img class="ratingimg" src="assets/picture/star.png">
+					<input type="radio" name="stars">3<img class="ratingimg" src="assets/picture/star.png">
+					<input type="radio" name="stars">4<img class="ratingimg" src="assets/picture/star.png">
+					<input type="radio" name="stars">5<img class="ratingimg" src="assets/picture/star.png">
 					<div class="form-group" style="margin-top: 20px;">
 						<textarea class="form-control" rows="5" placeholder="來評價吧!"></textarea>
 					</div>
-					<button type="submit" class="btn btn-primary ratingbutton center">送出</button>
+					<button id="button11" type="submit" class="btn btn-primary ratingbutton center">送出</button>
 				</form>
 			</div>
 		</div>
@@ -250,6 +250,19 @@
 	$(this).prop('checked',true);
 	}
 	});
+	</script>
+
+
+	<script>
+		$("#button11").click(function(){
+			var check=$("input[name='stars']:checked").length;//判斷有多少個方框被勾選
+			if(check==0){
+				alert("請勾選星星");
+				return false;//不要提交表單
+			}else{
+				return true;//提交表單
+			}
+		})
 	</script>
 </body>
 </html>
